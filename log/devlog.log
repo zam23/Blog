@@ -1,0 +1,312 @@
+2022-01-22 20:23:53.176  INFO 1376 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 1376 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2022-01-22 20:23:53.181 DEBUG 1376 --- [restartedMain] com.axin.blog.BlogApplication            : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-22 20:23:53.181  INFO 1376 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: dev
+2022-01-22 20:23:53.229  INFO 1376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-22 20:23:53.230  INFO 1376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-22 20:23:53.967  INFO 1376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 20:23:54.049  INFO 1376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+2022-01-22 20:23:54.777  INFO 1376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 20:23:54.787  INFO 1376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 20:23:54.788  INFO 1376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-22 20:23:54.902  INFO 1376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 20:23:54.902  INFO 1376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
+2022-01-22 20:23:55.052  INFO 1376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 20:23:55.109  INFO 1376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-22 20:23:55.286  INFO 1376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-22 20:23:55.419  INFO 1376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-22 20:23:55.561  INFO 1376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-22 20:23:55.586  INFO 1376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-22 20:23:56.372  INFO 1376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 20:23:56.381  INFO 1376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 20:23:57.253  WARN 1376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 20:23:57.755  INFO 1376 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-22 20:23:58.294  INFO 1376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-22 20:23:58.327  INFO 1376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-22 20:23:58.343  INFO 1376 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 5.649 seconds (JVM running for 6.952)
+2022-01-22 20:24:03.071  INFO 1376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-22 20:24:03.071  INFO 1376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-22 20:24:03.073  INFO 1376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-22 20:24:05.632  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 20:24:05.731  WARN 1376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 20:24:05.743  WARN 1376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 20:24:05.748  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 20:24:19.737  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:24:19.754  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : types
+2022-01-22 20:24:22.318  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:24:22.341  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : tags
+2022-01-22 20:24:24.637  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 20:24:24.654  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 20:24:26.595  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 20:24:26.597  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 20:24:45.748  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 20:24:45.759  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 20:31:15.452  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 20:31:15.461  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 20:31:21.821  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:31:21.829  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : types
+2022-01-22 20:31:22.812  INFO 1376 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:31:22.821  INFO 1376 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : tags
+2022-01-22 20:31:24.957  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 20:31:24.966  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 20:31:28.452  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 20:31:28.452  INFO 1376 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 20:51:49.887  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 20:51:49.887  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 20:51:50.036  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:51:50.042  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:51:58.519  INFO 1376 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 20:51:58.528  INFO 1376 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 20:51:58.693  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:51:58.696  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:53:09.025  INFO 1376 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/types/1', ip='127.0.0.1', classMethod='com.axin.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2022-01-22 20:53:09.031  INFO 1376 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : types
+2022-01-22 20:53:09.259  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:53:09.262  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:54:18.622  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 20:54:18.630  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 20:54:18.866  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:54:18.869  INFO 1376 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:54:25.221  INFO 1376 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:54:25.228  INFO 1376 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : types
+2022-01-22 20:54:25.387  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:54:25.389  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:54:27.249  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 20:54:27.256  INFO 1376 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : tags
+2022-01-22 20:54:27.375  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:54:27.377  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:54:29.623  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 20:54:29.629  INFO 1376 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 20:54:29.727  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:54:29.736  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 20:54:30.895  INFO 1376 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 20:54:30.895  INFO 1376 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 20:54:31.001  INFO 1376 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 20:54:31.006  INFO 1376 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:04:48.349  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:04:48.358  INFO 1376 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:04:48.511  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:04:48.513  INFO 1376 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:07:58.735  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 1948 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2022-01-22 21:07:58.736 DEBUG 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-22 21:07:58.736  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: dev
+2022-01-22 21:07:58.784  INFO 1948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-22 21:07:58.785  INFO 1948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-22 21:07:59.332  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 21:07:59.388  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2022-01-22 21:07:59.950  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 21:07:59.958  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 21:07:59.958  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-22 21:08:00.078  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 21:08:00.078  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1293 ms
+2022-01-22 21:08:00.201  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 21:08:00.237  INFO 1948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-22 21:08:00.340  INFO 1948 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-22 21:08:00.420  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-22 21:08:00.509  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-22 21:08:00.525  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-22 21:08:01.134  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 21:08:01.141  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:08:01.838  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 21:08:02.222  INFO 1948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-22 21:08:02.510  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-22 21:08:02.544  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-22 21:08:02.551  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 4.199 seconds (JVM running for 5.193)
+2022-01-22 21:08:06.619  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-22 21:08:06.619  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-22 21:08:06.620  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-01-22 21:08:06.648  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:08:06.723  WARN 1948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:08:06.734  WARN 1948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:08:06.739  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:08:07.224  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:07.228  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:08:25.787  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 21:08:25.804  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 21:08:25.959  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:25.964  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:08:26.854  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 21:08:26.875  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : tags
+2022-01-22 21:08:26.997  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:27.005  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:08:28.296  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.axin.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2022-01-22 21:08:28.308  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : types
+2022-01-22 21:08:28.422  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:28.426  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:08:29.522  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 21:08:29.525  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 21:08:29.627  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:29.631  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:08:33.418  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:08:33.430  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:08:33.561  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:08:33.564  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:11:17.484  INFO 1948 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:11:17.489  INFO 1948 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-22 21:11:17.494  INFO 1948 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-22 21:11:17.670  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 1948 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2022-01-22 21:11:17.671 DEBUG 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-22 21:11:17.671  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: dev
+2022-01-22 21:11:17.824  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 21:11:17.844  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2022-01-22 21:11:18.028  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 21:11:18.028  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 21:11:18.028  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-22 21:11:18.045  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 21:11:18.045  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2022-01-22 21:11:18.121  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 21:11:18.128  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-01-22 21:11:18.133  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-01-22 21:11:18.133  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-22 21:11:18.224  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 21:11:18.225  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:11:18.593  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 21:11:18.723  INFO 1948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-22 21:11:18.871  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-22 21:11:18.883  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-22 21:11:18.886  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 1.242 seconds (JVM running for 201.528)
+2022-01-22 21:11:18.888  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-22 21:11:19.810  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-22 21:11:19.810  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-22 21:11:19.812  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-01-22 21:11:19.816  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:11:19.830  WARN 1948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:11:19.833  WARN 1948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:11:19.837  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:11:20.011  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:11:20.015  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:12:11.611  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:12:11.618  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:12:11.853  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:12:11.856  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:19:29.332  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 21:19:29.334  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 21:19:29.484  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:19:29.488  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:22:44.277  INFO 1948 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:22:44.279  INFO 1948 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-01-22 21:22:44.282  INFO 1948 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-01-22 21:22:44.471  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 1948 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2022-01-22 21:22:44.471 DEBUG 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-22 21:22:44.471  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: dev
+2022-01-22 21:22:44.630  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 21:22:44.650  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2022-01-22 21:22:44.778  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 21:22:44.778  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 21:22:44.779  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-22 21:22:44.792  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 21:22:44.792  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 319 ms
+2022-01-22 21:22:44.837  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 21:22:44.840  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-01-22 21:22:44.843  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-01-22 21:22:44.843  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-22 21:22:44.913  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 21:22:44.913  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:22:45.274  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 21:22:45.441  INFO 1948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-22 21:22:45.607  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-22 21:22:45.617  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-22 21:22:45.620  INFO 1948 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 1.175 seconds (JVM running for 888.263)
+2022-01-22 21:22:45.621  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-22 21:22:46.912  INFO 1948 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-22 21:22:46.913  INFO 1948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-22 21:22:46.914  INFO 1948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-22 21:22:49.768  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 21:22:49.771  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 21:22:49.890  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:22:49.900  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:23:36.044  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 21:23:36.044  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 21:23:36.273  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:23:36.277  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:24:12.145  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:24:12.155  WARN 1948 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:24:12.161  WARN 1948 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:24:12.164  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:24:12.338  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:24:12.344  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:27:20.603  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 21:27:20.615  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 21:27:20.735  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:27:20.739  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:27:57.555  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.axin.blog.web.ArchiveShowController.archives', args=[{}]}
+2022-01-22 21:27:57.560  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : archives
+2022-01-22 21:27:57.704  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:27:57.709  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:30:18.519  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:30:18.527  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:30:18.671  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:30:18.674  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:30:19.672  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/blog/24', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.blog', args=[24, {}]}
+2022-01-22 21:30:19.755  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : blog
+2022-01-22 21:30:20.046  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:30:20.050  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:30:24.899  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.axin.blog.web.AboutShowController.about', args=[]}
+2022-01-22 21:30:24.900  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Result : about
+2022-01-22 21:30:25.101  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:30:25.104  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:31:10.025  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:31:10.031  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:31:10.253  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:31:10.259  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:36:03.889  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:36:03.897  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:36:04.126  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:36:04.131  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:36:08.544  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/blog/24', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.blog', args=[24, {}]}
+2022-01-22 21:36:08.559  INFO 1948 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : blog
+2022-01-22 21:36:08.819  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:36:08.822  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:40:10.846  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:40:10.861  INFO 1948 --- [http-nio-8080-exec-8] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:40:11.016  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:40:11.018  INFO 1948 --- [http-nio-8080-exec-4] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:40:13.073  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/blog/24', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.blog', args=[24, {}]}
+2022-01-22 21:40:13.088  INFO 1948 --- [http-nio-8080-exec-2] com.axin.blog.aspect.LogAspect           : Result : blog
+2022-01-22 21:40:13.373  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:40:13.378  INFO 1948 --- [http-nio-8080-exec-3] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:40:59.268  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:40:59.277  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:40:59.434  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:40:59.437  INFO 1948 --- [http-nio-8080-exec-7] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:41:04.359  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/blog/24', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.blog', args=[24, {}]}
+2022-01-22 21:41:04.371  INFO 1948 --- [http-nio-8080-exec-9] com.axin.blog.aspect.LogAspect           : Result : blog
+2022-01-22 21:41:04.647  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:41:04.649  INFO 1948 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:41:13.455  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/blog/24', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.blog', args=[24, {}]}
+2022-01-22 21:41:13.469  INFO 1948 --- [http-nio-8080-exec-6] com.axin.blog.aspect.LogAspect           : Result : blog
+2022-01-22 21:41:13.662  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:41:13.665  INFO 1948 --- [http-nio-8080-exec-10] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList
+2022-01-22 21:43:19.227  INFO 16064 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 16064 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2022-01-22 21:43:19.228 DEBUG 16064 --- [restartedMain] com.axin.blog.BlogApplication            : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-01-22 21:43:19.229  INFO 16064 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: dev
+2022-01-22 21:43:19.286  INFO 16064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-22 21:43:19.286  INFO 16064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-22 21:43:19.816  INFO 16064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-22 21:43:19.876  INFO 16064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2022-01-22 21:43:20.467  INFO 16064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-22 21:43:20.474  INFO 16064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-22 21:43:20.474  INFO 16064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-22 21:43:20.574  INFO 16064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-22 21:43:20.574  INFO 16064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1288 ms
+2022-01-22 21:43:20.693  INFO 16064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-22 21:43:20.727  INFO 16064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-22 21:43:20.825  INFO 16064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-22 21:43:20.897  INFO 16064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-22 21:43:20.984  INFO 16064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-22 21:43:20.998  INFO 16064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-22 21:43:21.635  INFO 16064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-22 21:43:21.641  INFO 16064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-22 21:43:22.360  WARN 16064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-22 21:43:22.752  INFO 16064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-22 21:43:23.038  INFO 16064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-22 21:43:23.067  INFO 16064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-22 21:43:23.074  INFO 16064 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 4.203 seconds (JVM running for 5.162)
+2022-01-22 21:43:29.458  INFO 16064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-22 21:43:29.459  INFO 16064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-22 21:43:29.460  INFO 16064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-22 21:43:29.489  INFO 16064 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2022-01-22 21:43:29.558  WARN 16064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:43:29.568  WARN 16064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-01-22 21:43:29.573  INFO 16064 --- [http-nio-8080-exec-1] com.axin.blog.aspect.LogAspect           : Result : index
+2022-01-22 21:43:30.198  INFO 16064 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Resquest : RequestLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.axin.blog.web.IndexController.newblogs', args=[{}]}
+2022-01-22 21:43:30.205  INFO 16064 --- [http-nio-8080-exec-5] com.axin.blog.aspect.LogAspect           : Result : _fragments :: newblogList

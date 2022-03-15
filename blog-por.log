@@ -1,0 +1,4 @@
+2021-12-26 15:44:45.657  INFO 4112 --- [restartedMain] com.axin.blog.BlogApplication            : Starting BlogApplication using Java 1.8.0_202 on DESKTOP-FOAC1UU with PID 4112 (L:\IDEAworkpaces\blog\target\classes started by X9 in L:\IDEAworkpaces\blog)
+2021-12-26 15:44:45.658  INFO 4112 --- [restartedMain] com.axin.blog.BlogApplication            : The following profiles are active: pro
+2021-12-26 15:44:46.802  WARN 4112 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-26 15:44:46.923  INFO 4112 --- [restartedMain] com.axin.blog.BlogApplication            : Started BlogApplication in 1.65 seconds (JVM running for 2.488)
